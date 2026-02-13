@@ -73,13 +73,17 @@ After generating the response:
 
 ## Project Structure
 
+## Project Structure
+
+```
 Personalized-RAG-Assistant-with-Semantic-Memory/
 │
-├── app.py # Streamlit interface and application entry point
-├── graph.py # Graph-based workflow definition and orchestration logic
-├── prompts.py # Prompt templates for different models (assistant, query generator, memory extractor,etc.)
+├── app.py           # Streamlit interface and application entry point
+├── graph.py         # Graph-based workflow definition and orchestration logic
+├── prompts.py       # Prompt templates for different models (assistant, query generator, memory extractor, etc.)
 ├── requirements.txt
-└──README.md
+└── README.md
+```
 
 ---
 
@@ -128,6 +132,6 @@ streamlit run app.py
 
 ## Author
 
-**Mbarek Hanini**  
+[**Mbarek Hanini**](https://www.linkedin.com/in/mbarek-hanini-19492a34b/)
 PhD Researcher | Data Scientist  
 AI Multi-Agent Systems | Workflow Automation | RAG and GraphRAG Architectures
