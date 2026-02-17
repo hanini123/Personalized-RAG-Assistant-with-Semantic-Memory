@@ -1,5 +1,9 @@
 # Personalized RAG Assistant with Semantic Memory
+🔗 Live Demo [**Streamlit**](https://personalized-rag-assistant-with-semantic-memory.streamlit.app/):
 
+<p align="center">
+  <img src="workflow.png" alt="Real-Time Personalized RAG Workflow" width="800"/>
+</p>
 ## Overview
 
 This project implements a **Personalized Retrieval-Augmented Generation (RAG) Assistant** with semantic memory and graph-based orchestration.

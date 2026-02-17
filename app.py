@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv() 
 os.getenv("NVIDIA_API_KEY")
 os.getenv("TAVILY_API_KEY")
-
+# https://personalized-rag-assistant-with-semantic-memory.streamlit.app/
 # Initialize session state
 if "NVIDIA_API_KEY" in os.environ and "TAVILY_API_KEY" in os.environ:
     st.session_state.NVIDIA_API_KEY = os.environ["NVIDIA_API_KEY"]
