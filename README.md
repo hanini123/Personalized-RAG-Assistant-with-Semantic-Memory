@@ -1,9 +1,16 @@
 # Personalized RAG Assistant with Semantic Memory
+
 🔗 Live Demo [**Streamlit**](https://personalized-rag-assistant-with-semantic-memory.streamlit.app/):
 
 <p align="center">
   <img src="workflow.png" alt="Real-Time Personalized RAG Workflow" width="800"/>
 </p>
+
+## 🎥 Demo
+
+<video width="100%" controls>
+  <source src="2026-03-25-07-18-24.mp4" type="video/mp4">
+</video>
 ## Overview
 
 This project implements a **Personalized Retrieval-Augmented Generation (RAG) Assistant** with semantic memory and graph-based orchestration.
@@ -19,6 +26,7 @@ The system is built as a structured multi-model workflow rather than a single LL
 7. Extracted facts are stored as semantic memory to personalize future responses.
 
 This design separates:
+
 - Decision-making
 - Query generation
 - Retrieval
@@ -32,7 +40,9 @@ The entire workflow is orchestrated using a graph-based execution model.
 ## Architecture Flow
 
 ### Step 1 — Request Observation
+
 The main assistant model evaluates the user query and decides:
+
 - Direct answer branch (internal knowledge)
 - Retrieval branch (requires external information)
 
@@ -45,6 +55,7 @@ The main assistant model evaluates the user query and decides:
 ### Step 3 — Memory Extraction (Both Branches)
 
 After generating the response:
+
 - A separate model extracts factual user information from the interaction.
 - Extracted facts are stored as semantic memory.
 - Memory is later injected into future prompts to enable personalization.
@@ -69,7 +80,7 @@ After generating the response:
 - LangChain
 - LangGraph
 - LangChain NVIDIA AI Endpoints
-- LangChain Tavily 
+- LangChain Tavily
 - Wikipedia
 - Trustcall
 
@@ -99,39 +110,54 @@ Personalized-RAG-Assistant-with-Semantic-Memory/
 git clone https://github.com/hanini123/Personalized-RAG-Assistant-with-Semantic-Memory.git
 cd Personalized-RAG-Assistant-with-Semantic-Memory
 ```
+
 ### 2️⃣ Create a Virtual Environment
+
 ```bash
 python -m venv .venv
 ```
+
 #### Windows
+
 ```bash
 .venv\Scripts\activate
 ```
+
 #### Mac/Linux
+
 ```bash
 source .venv/bin/activate
 
 ```
+
 ### 3️⃣ Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 
 ```
+
 ### 4️⃣ Configure Environment Variables
 
 You can either:
+
 - Create a `.env` file in the root directory and add your API keys:
 
 ```bash
 NVIDIA_API_KEY=your_key_here
 TAVILY_API_KEY=your_key_here
 ```
+
 or
+
 - Provide the API keys directly through the graphical user interface when running the application.
+
 ### Running the Application
+
 ```bash
 streamlit run app.py
 ```
+
 ---
 
 ## Author
