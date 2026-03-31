@@ -6,8 +6,6 @@
   <img src="workflow.png" alt="Real-Time Personalized RAG Workflow" width="800"/>
 </p>
 
-## 🎥 Demo
-
 <video width="100%" controls>
   <source src="2026-03-25-07-18-24.mp4" type="video/mp4">
 </video>
